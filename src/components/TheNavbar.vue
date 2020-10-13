@@ -4,10 +4,10 @@
       <img src="../assets/logo.png" alt="Logo" />
     </div>
     <ul>
-      <li>Home</li>
-      <li>Menu</li>
-      <li>About Us</li>
-      <li>Contact</li>
+      <router-link to="/" class="nav__link">Home</router-link>
+      <router-link to="/menu" class="nav__link">Menu</router-link>
+      <router-link to="/contact" class="nav__link">Contact</router-link>
+      <router-link to="/about" class="nav__link">About Us</router-link>
     </ul>
     <div class="auth">
       <button class="btn login">Log in</button>
@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 nav {
   width: 100%;
   padding: 3.5rem 0rem;
@@ -35,12 +35,13 @@ nav {
   font-size: 18px;
 }
 ul {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   justify-self: center;
 }
-li {
+
+.nav__link {
   cursor: pointer;
   list-style: none;
   text-decoration: none;
@@ -48,26 +49,31 @@ li {
   transition: all 0.2s;
   padding: 0.5rem 0;
   border-bottom: 2px solid transparent;
-}
-li:hover {
-  border-bottom: 2px solid #b4c635;
+  color: #233547;
+
+  &:hover {
+    border-bottom: 2px solid #b4c635;
+  }
 }
 
 .logo {
   margin-right: 50px;
+
+  img {
+    width: 100px;
+  }
 }
-.logo img {
-  width: 100px;
-}
+
 .btn {
   padding: 1rem;
   background: none;
   cursor: pointer;
   font-size: 16px;
-}
+  color: #233547;
 
-.btn:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .login {
@@ -75,8 +81,9 @@ li:hover {
   padding: 1.3rem 1.5rem;
   transition: all 0.2s;
   border: none;
-}
-.login:hover {
-  background-color: #cfe436;
+
+  &:hover {
+    background-color: #cfe436;
+  }
 }
 </style>

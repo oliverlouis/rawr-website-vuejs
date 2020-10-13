@@ -1,19 +1,26 @@
 <template>
   <div id="app">
     <TheNavbar />
-    <Welcome />
+    <router-view></router-view>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import TheNavbar from "./components/TheNavbar";
-import Welcome from "./components/Welcome";
+import TheFooter from "./components/TheFooter";
 
 export default {
   name: "App",
   components: {
     TheNavbar,
-    Welcome,
+    TheFooter,
   },
 };
 </script>
@@ -43,8 +50,8 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  width: 80%;
+  color: #233547;
+  width: 76%;
   margin: 0 auto;
 }
 
