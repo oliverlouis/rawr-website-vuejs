@@ -1,3 +1,7 @@
-import HomePage from './components/HomePage';
+import HomePage from './pages/HomePage';
+import Menu from './pages/Menu';
 
-export const routes = [{path: '/', component: HomePage}];
+export const routes = [
+	{path: '/', component: HomePage},
+	{path: '/menu', component: Menu}
+];

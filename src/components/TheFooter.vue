@@ -2,6 +2,7 @@
   <div class="footer">
     <div class="footer__logo">
       <img src="../assets/logo.png" alt="Logo" />
+      <p>Copyright &copy; Rawr Cafe LC 2020</p>
     </div>
 
     <div class="footer__contact">
@@ -28,6 +29,9 @@
       <a href="https://www.facebook.com/rawr.slu/"
         ><i class="fab fa-facebook-f fa-2x"></i
       ></a>
+      <a href="https://www.facebook.com/rawr.slu/"
+        ><i class="fab fa-twitter fa-2x"></i
+      ></a>
     </div>
   </div>
 </template>
@@ -44,8 +48,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(228, 228, 228);
-  padding: 6rem 5rem;
+  background-color: #fff;
+  padding: 5rem 5rem;
   font-size: 18px;
 
   &__logo {
@@ -54,30 +58,41 @@ export default {
     img {
       width: 100%;
     }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  &__contact {
+    text-align: left;
   }
 
   &__form {
     text-align: left;
-    width: 200px;
+    width: 250px;
+    margin-top: 30px;
 
     label {
       display: block;
       margin-bottom: 8px;
+      font-weight: 700;
     }
 
     input {
       display: block;
       margin-bottom: 15px;
-      padding: 2rem 0.5rem;
+      padding: 1rem 0.5rem;
       border: none;
       border-bottom: 1px solid #233547;
       background: transparent;
-      width: 100%;
+      width: 85%;
       transition: all 0.2s;
 
       &:focus {
         outline: none;
         border-bottom: 1px solid #b4c635;
+        width: 100%;
       }
     }
   }
@@ -92,9 +107,6 @@ export default {
   a:visited {
     text-decoration: none;
     color: #233547;
-  }
-
-  .fab {
   }
 }
 </style>

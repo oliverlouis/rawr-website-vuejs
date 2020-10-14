@@ -15,7 +15,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "HomePage",
+};
 </script>
 
 <style lang="scss" scoped>
@@ -35,9 +37,9 @@ export default {};
     p {
       font-size: 18px;
       font-weight: 700;
-      margin-top: 30px;
+      margin-top: 50px;
       color: #607392;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
   }
 
