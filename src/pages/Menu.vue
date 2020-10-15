@@ -7,7 +7,7 @@
         :key="item.productId"
         :name="item.name"
         :price="item.price"
-        :image="item.src"
+        :image="item.image"
       />
     </ul>
   </div>
@@ -39,17 +39,16 @@ export default {
 .menu {
   width: 100%;
 
+  h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-
-    //  &-item {
-    //    width: 250px;
-    //    border: 1px solid black;
-    //    padding: 3rem;
-    //    font-size: 20px;
-    //  }
+    justify-content: space-between;
   }
 }
 </style>
