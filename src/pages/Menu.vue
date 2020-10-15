@@ -1,8 +1,18 @@
 <template>
   <div class="menu">
     <div class="menu__category">
-      <h1 class="menu__category-food" @click="toggleShowFood">Food</h1>
-      <h1 class="menu__category-beverage" @click="toggleShowBeverages">
+      <h1
+        class="menu__category-food"
+        :class="{ active: showFood }"
+        @click="toggleShowFood"
+      >
+        Food
+      </h1>
+      <h1
+        class="menu__category-beverage"
+        :class="{ active: showBeverages }"
+        @click="toggleShowBeverages"
+      >
         Beverages
       </h1>
     </div>
@@ -85,6 +95,16 @@ export default {
     &-food,
     &-beverage {
       cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+
+      &:hover {
+        border-bottom: 2px solid #b4c635;
+      }
+
+      &:active {
+        border-bottom: 2px solid #b4c635;
+      }
     }
   }
 
@@ -99,5 +119,9 @@ export default {
     list-style: none;
     justify-content: space-between;
   }
+}
+
+.active {
+  border-bottom: 2px solid #b4c635;
 }
 </style>

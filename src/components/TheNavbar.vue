@@ -19,6 +19,12 @@
 <script>
 export default {
   name: "TheNavbar",
+
+  // data() {
+  //   return {
+
+  //   }
+  // }
 };
 </script>
 
@@ -52,6 +58,10 @@ ul {
   color: #233547;
 
   &:hover {
+    border-bottom: 2px solid #b4c635;
+  }
+
+  &:active {
     border-bottom: 2px solid #b4c635;
   }
 }
