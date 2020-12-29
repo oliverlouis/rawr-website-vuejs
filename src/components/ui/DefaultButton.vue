@@ -14,7 +14,7 @@ button {
   background: none;
   cursor: pointer;
   font-size: 16px;
-  background-color: #cfe436;
+  font-weight: 700;
   border: none;
   padding: 1.3rem 1.5rem;
   transition: all 0.2s;

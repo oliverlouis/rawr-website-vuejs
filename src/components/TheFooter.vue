@@ -48,7 +48,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color:transparent;
   padding: 5rem 5rem;
   font-size: 18px;
 
